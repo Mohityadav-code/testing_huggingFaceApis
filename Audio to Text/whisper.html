@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="content-width, initial-scale=1.0">
+    <title>Whisper API Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(./DALL·E\ 2023-11-17\ 06.20.50\ -\ A\ simple\ and\ clean\ digital\ background\ suitable\ for\ an\ audio\ to\ text\ generator\ website.\ The\ design\ should\ focus\ on\ minimalistic\ elements\,\ representing\ .png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+      
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class=" px-16 py-10 rounded-lg  text-center bg-white w-fit">
+        <h1 class="text-3xl font-bold mb-8">Whisper API Speech Recognition</h1>
+        <input type="file" id="audioInput" accept=".flac, .mp3, .wav" class="mb-4">
+        <button id="uploadButton" class="p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 px-3">Upload and Analyze</button>
+        <pre id="responseContainer" class="mt-8 text-left"></pre>
+    </div>
+
+    <script src="whisper.js"></script>
+</body>
+</html>
